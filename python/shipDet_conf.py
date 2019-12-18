@@ -213,8 +213,6 @@ def configure(run,ship_geo):
    taumuondetector.SetRpcElectrodeDimensions(ship_geo.tauMudet.XEle,ship_geo.tauMudet.YEle, ship_geo.tauMudet.ZEle)
    taumuondetector.SetRpcPETDimensions(ship_geo.tauMudet.XPet,ship_geo.tauMudet.YPet, ship_geo.tauMudet.ZPet)
    taumuondetector.SetNRpcInArm(ship_geo.tauMudet.NRpc)
-   if hasattr(ship_geo.tauMudet,'NmuRpc'): #addition of layer as veto tagger
-      taumuondetector.SetNRpcInTagger(ship_geo.tauMudet.NmuRpc)
    taumuondetector.SetPillarDimensions(ship_geo.tauMudet.PillarX,ship_geo.tauMudet.PillarY, ship_geo.tauMudet.PillarZ)
    detectorList.append(taumuondetector)
    if ship_geo.nuTauTargetDesign==3:
